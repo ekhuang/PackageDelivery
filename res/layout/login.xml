@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="3">
+
+    <TableRow>
+        <TextView
+            android:layout_column="2"
+            android:text="Login:"
+            android:gravity="left"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+        	android:layout_column="2"
+            android:text="Username: "
+            android:padding="3dip" />
+        <EditText android:text="" android:maxLength="16" android:id="@+id/usernameField" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="2"
+            android:text="Password: "
+            android:padding="3dip" />
+        <EditText android:text="" android:maxLength="16" android:id="@+id/passwordField" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="textPassword"></EditText>
+    </TableRow>
+    <Button android:text="login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/login"></Button>
+    <Button android:layout_width="wrap_content" android:id="@+id/register" android:layout_height="wrap_content" android:text="register"></Button>
+
+</TableLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="3">
+
+    <TableRow>
+        <TextView
+            android:layout_column="2"
+            android:text="New Transaction:"
+            android:gravity="left"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+        	android:layout_column="2"
+            android:text="Username: "
+            android:padding="3dip" />
+        <EditText android:text="" android:id="@+id/recipientField" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    </TableRow>
+
+    <Button android:text="Send Request" android:id="@+id/sendPackageRequest" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    
+    <TextView android:text="Incoming Transactions:" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ListView android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/incomingPackageRequests"></ListView>
+    </ScrollView>
+    
+    <TextView android:text="Current Transactions:" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    
+    <ScrollView android:id="@+id/scrollView2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ListView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/transactionsList"></ListView>
+    </ScrollView>
+
+</TableLayout>
